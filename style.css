@@ -9,7 +9,6 @@
   --danger-color: #ba2525;
 }
 
-/* Color Themes depending on Current Activity Mode */
 body.theme-work {
   --bg-color: #f7ebec;
   --primary-color: #d95550;
@@ -57,7 +56,6 @@ body {
   padding: 1rem;
 }
 
-/* Tab Management Styles */
 .mode-tabs {
   display: flex;
   justify-content: space-between;
@@ -85,7 +83,6 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* Card Panel Layout */
 .timer-card {
   background-color: var(--card-bg);
   padding: 3rem 2rem;
@@ -120,7 +117,6 @@ body {
   justify-content: center;
 }
 
-/* Modularized Buttons */
 .btn {
   padding: 0.85rem 1.75rem;
   font-size: 1rem;
@@ -132,19 +128,40 @@ body {
   transform: scale(1);
 }
 
-.btn:active:not(:disabled) { transform: scale(0.96); }
-.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn:active:not(:disabled) { 
+  transform: scale(0.96); 
+}
+.btn:disabled { 
+  opacity: 0.4; 
+  cursor: not-allowed; 
+}
 
-.btn-primary { background-color: var(--primary-color); color: #fff; }
-.btn-primary:hover:not(:disabled) { background-color: var(--primary-hover); }
+.btn-primary { 
+  background-color: 
+  var(--primary-color); 
+  color: #fff; 
+}
+.btn-primary:hover:not(:disabled) { 
+  background-color: 
+  var(--primary-hover); 
+}
 
-.btn-secondary { background-color: #e4e7eb; color: #486581; }
-.btn-secondary:hover:not(:disabled) { background-color: #cbd2d9; }
+.btn-secondary { 
+  background-color: #e4e7eb; 
+  color: #486581; 
+}
+.btn-secondary:hover:not(:disabled) { 
+  background-color: #cbd2d9; 
+}
 
-.btn-danger { background-color: var(--danger-color); color: #fff; }
-.btn-danger:hover:not(:disabled) { opacity: 0.9; }
+.btn-danger { 
+  background-color: var(--danger-color); 
+  color: #fff; 
+}
+.btn-danger:hover:not(:disabled) { 
+  opacity: 0.9; 
+}
 
-/* Dashboard footer rules */
 .dashboard-footer {
   display: flex;
   justify-content: space-between;
@@ -208,8 +225,16 @@ body {
   font-weight: 600;
   color: #102a43;
 }
-.input-group input:focus { border-color: var(--primary-color); outline: none; }
+.input-group input:focus { 
+  border-color: var(--primary-color); 
+  outline: none; 
+}
 
-.modal-actions { display: flex; gap: 0.75rem; justify-content: flex-end; }
+.modal-actions { 
+  display: flex; gap: 0.75rem; 
+  justify-content: flex-end;
+ }
 
-.hidden { display: none !important; }
+.hidden { 
+  display: none !important; 
+}
