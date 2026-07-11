@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.timer-container {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+#status-label {
+  font-size: 1.5rem;
+  color: #486581;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.time-display {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #102a43;
+  margin: 1.5rem 0;
+  font-variant-numeric: tabular-nums; /* Prevents text shifting as numbers change */
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.start { 
+    background-color: #243b53; 
+    color: white; 
+}
+.start:hover:not(:disabled) { 
+    background-color: #334e68; 
+}
+
+.pause { 
+    background-color: #cb6e17; 
+    color: white; 
+}
+.pause:hover:not(:disabled) { 
+    background-color: #e17e1e; 
+}
+
+.reset { 
+    background-color: #ba2525; 
+    
+    color: white; 
+}
+.reset:hover:not(:disabled) { 
+    background-color: #d32f2f; 
+}
